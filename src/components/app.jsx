@@ -11,7 +11,7 @@ class App extends Component {
 
     this.state = {
       gifs: [],
-      selectedGifId: "xT9IgDEI1iZyb2wqo8"
+      selectedGifId: null // "xT9IgDEI1iZyb2wqo8"
     };
   }
 
@@ -43,7 +43,7 @@ class App extends Component {
           </div>
         </div>
         <div className="right-scene">
-        <GifList gifs={this.state.gifs} selectGif={this.selectGif}/>
+          <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
         </div>
       </div>
     );
